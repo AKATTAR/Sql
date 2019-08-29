@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="40dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Student Detail"
+         />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:columnCount="2"
+        android:orientation="horizontal"
+        android:rowCount="3">
+
+        <TextView
+            android:id="@+id/textRoll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter roll no" />
+
+        <EditText
+            android:id="@+id/editRollno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint=" Enter Roll no"
+            />
+
+        <TextView
+            android:id="@+id/textName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter name" />
+
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter name:"
+            android:inputType="text" />
+
+
+        <TextView
+            android:id="@+id/textMarks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Marks" />
+
+        <EditText
+            android:id="@+id/editMark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:inputType="text"
+            android:text="Marks" />
+
+
+        <TableLayout>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                >
+                <Button
+                    android:id="@+id/buttonAdd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:text="Add" />
+
+                <Button
+                    android:id="@+id/buttonDelete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:text="Delet" />
+
+                <Button
+                    android:id="@+id/buttonModify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="3"
+                    android:text="Modify" />
+
+
+            </TableRow>
+
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/btnView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:text="View" />
+
+                <Button
+                    android:id="@+id/btnViewAll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:text="ViewAll" />
+
+                <Button
+                    android:id="@+id/btnShow"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_column="3"
+                    android:text="Show" />
+
+
+            </TableRow>
+
+
+        </TableLayout>
+
+    </GridLayout>
+</LinearLayout>
